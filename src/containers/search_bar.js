@@ -50,6 +50,8 @@ export class SearchBar extends Component {
 
 function mapDispatchToProps(dispatch) {
   // action flows to middleware and reducers
+  console.log("Dispatch: ", dispatch);
+  console.log("fetchWeather: ", fetchWeather);
   return bindActionCreators( { fetchWeather }, dispatch);
 }
 
